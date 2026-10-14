@@ -16,15 +16,10 @@
       <stop offset="100%" stop-color="#00E5FF"/>
     </linearGradient>
 
-    <linearGradient id="spiderTitleSweep" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#E2E8F0" />
-      <stop offset="25%" stop-color="#FFFFFF" />
-      <stop offset="45%" stop-color="#00D2FF" />
-      <stop offset="55%" stop-color="#FF1744" />
-      <stop offset="75%" stop-color="#FFFFFF" />
-      <stop offset="100%" stop-color="#E2E8F0" />
-      <animate attributeName="x1" values="-150%; 150%" dur="4s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="-50%; 250%" dur="4s" repeatCount="indefinite"/>
+    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#F1F5F9"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
     </linearGradient>
 
     <radialGradient id="centerLight" cx="50%" cy="40%" r="60%">
@@ -67,32 +62,6 @@
       50% { opacity: 0.42; }
     }
     .web-lines { animation: pulseWeb 6s ease-in-out infinite; }
-
-    @keyframes glitchCyan {
-      0%, 100% { transform: translate(-3.5px, 0); opacity: 0.45; }
-      20% { transform: translate(3px, -1.5px); opacity: 0.85; }
-      40% { transform: translate(-2px, 1px); opacity: 0.3; }
-      60% { transform: translate(3.5px, 0.5px); opacity: 0.85; }
-      80% { transform: translate(-1px, -1px); opacity: 0.4; }
-    }
-
-    @keyframes glitchRed {
-      0%, 100% { transform: translate(3.5px, 0); opacity: 0.55; }
-      20% { transform: translate(-3px, 1.5px); opacity: 0.35; }
-      40% { transform: translate(2.5px, -1px); opacity: 0.85; }
-      60% { transform: translate(-3.5px, -0.5px); opacity: 0.3; }
-      80% { transform: translate(1px, 1px); opacity: 0.75; }
-    }
-
-    @keyframes titleEnergy {
-      0%, 100% { fill: #FFFFFF; filter: drop-shadow(0 0 14px rgba(0, 210, 255, 0.55)); }
-      33% { fill: #E0F2FE; filter: drop-shadow(0 0 22px rgba(0, 229, 255, 0.9)); }
-      66% { fill: #FFE4E6; filter: drop-shadow(0 0 22px rgba(255, 23, 68, 0.9)); }
-    }
-
-    .spider-glitch-cyan { animation: glitchCyan 2.4s ease-in-out infinite; }
-    .spider-glitch-red { animation: glitchRed 2.4s ease-in-out infinite; }
-    .spider-title-energy { animation: titleEnergy 3.6s ease-in-out infinite; }
   </style>
 
   <!-- Base Canvas -->
@@ -268,23 +237,8 @@
     <text x="0" y="4.5" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'JetBrains Mono', monospace" font-size="11" font-weight="700" letter-spacing="3" text-anchor="middle">YOUR FRIENDLY NEIGHBORHOOD DEV</text>
   </g>
 
-  <!-- Cinematic Spider-Man Movie Intro Animated Name -->
-  <!-- Layer 1: Electric Cyan Chromatic Aberration Aura -->
-  <g class="spider-glitch-cyan">
-    <text x="600" y="222" fill="#00E5FF" font-family="-apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Arial, sans-serif" font-size="48" font-weight="900" letter-spacing="3" text-anchor="middle" filter="url(#glowCyan)" opacity="0.6">
-      AKBAR RESTU SETIAJI
-    </text>
-  </g>
-
-  <!-- Layer 2: Crimson Red Chromatic Aberration Aura -->
-  <g class="spider-glitch-red">
-    <text x="600" y="222" fill="#FF1744" font-family="-apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Arial, sans-serif" font-size="48" font-weight="900" letter-spacing="3" text-anchor="middle" filter="url(#glowRed)" opacity="0.6">
-      AKBAR RESTU SETIAJI
-    </text>
-  </g>
-
-  <!-- Layer 3: Main Title with Cinematic Spider-Man Energy Pulse & Light Beam -->
-  <text x="600" y="222" class="spider-title-energy" fill="url(#spiderTitleSweep)" stroke="#090d16" stroke-width="0.8" font-family="-apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Arial, sans-serif" font-size="48" font-weight="900" letter-spacing="3" text-anchor="middle">
+  <!-- Main Headline Name -->
+  <text x="600" y="222" fill="url(#nameGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Arial, sans-serif" font-size="48" font-weight="900" letter-spacing="3" text-anchor="middle" filter="drop-shadow(0px 4px 16px rgba(0,0,0,0.95))">
     AKBAR RESTU SETIAJI
   </text>
 
