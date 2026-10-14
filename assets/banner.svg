@@ -16,36 +16,32 @@
       <stop offset="100%" stop-color="#00E5FF"/>
     </linearGradient>
 
-    <linearGradient id="spiderTitleSweep" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#E2E8F0" />
-      <stop offset="25%" stop-color="#FFFFFF" />
-      <stop offset="45%" stop-color="#00D2FF" />
-      <stop offset="55%" stop-color="#FF1744" />
-      <stop offset="75%" stop-color="#FFFFFF" />
-      <stop offset="100%" stop-color="#E2E8F0" />
-      <animate attributeName="x1" values="-150%; 150%" dur="4s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="-50%; 250%" dur="4s" repeatCount="indefinite"/>
+    <!-- Clean Crisp Metallic White Name Gradient -->
+    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#F1F5F9"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
     </linearGradient>
 
     <radialGradient id="centerLight" cx="50%" cy="40%" r="60%">
-      <stop offset="0%" stop-color="#FF1744" stop-opacity="0.16"/>
+      <stop offset="0%" stop-color="#FF1744" stop-opacity="0.14"/>
       <stop offset="40%" stop-color="#0066FF" stop-opacity="0.08"/>
       <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
     </radialGradient>
 
     <radialGradient id="cornerGlowRed" cx="0%" cy="0%" r="50%">
-      <stop offset="0%" stop-color="#FF1744" stop-opacity="0.28"/>
+      <stop offset="0%" stop-color="#FF1744" stop-opacity="0.25"/>
       <stop offset="100%" stop-color="#FF1744" stop-opacity="0"/>
     </radialGradient>
 
     <radialGradient id="cornerGlowBlue" cx="100%" cy="100%" r="50%">
-      <stop offset="0%" stop-color="#00D2FF" stop-opacity="0.25"/>
+      <stop offset="0%" stop-color="#00D2FF" stop-opacity="0.22"/>
       <stop offset="100%" stop-color="#00D2FF" stop-opacity="0"/>
     </radialGradient>
 
     <!-- Glowing Filters -->
     <filter id="glowRed" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -59,98 +55,98 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+
+    <!-- Smooth Dynamic Wave Bottom ClipPath (Tidak Kotak) -->
+    <clipPath id="waveClip">
+      <path d="M 0 0 L 1200 0 L 1200 325 C 1000 365, 800 315, 600 350 C 400 380, 200 320, 0 340 Z"/>
+    </clipPath>
   </defs>
 
   <style>
     @keyframes pulseWeb {
-      0%, 100% { opacity: 0.22; }
-      50% { opacity: 0.42; }
+      0%, 100% { opacity: 0.20; }
+      50% { opacity: 0.38; }
     }
     .web-lines { animation: pulseWeb 6s ease-in-out infinite; }
   </style>
 
-  <!-- Base Canvas -->
-  <rect width="1200" height="380" fill="url(#bgGrad)"/>
-  <rect width="1200" height="380" fill="url(#centerLight)"/>
-  <rect width="1200" height="380" fill="url(#cornerGlowRed)"/>
-  <rect width="1200" height="380" fill="url(#cornerGlowBlue)"/>
+  <!-- Main Canvas Clipped with Dynamic Spider-Web Wave -->
+  <g clip-path="url(#waveClip)">
+    <!-- Base Backgrounds -->
+    <rect width="1200" height="380" fill="url(#bgGrad)"/>
+    <rect width="1200" height="380" fill="url(#centerLight)"/>
+    <rect width="1200" height="380" fill="url(#cornerGlowRed)"/>
+    <rect width="1200" height="380" fill="url(#cornerGlowBlue)"/>
 
-  <!-- High-Tech Matrix / Cyber Grid Pattern -->
-  <g opacity="0.06" stroke="#FFFFFF" stroke-width="0.8">
-    <line x1="0" y1="60" x2="1200" y2="60"/>
-    <line x1="0" y1="120" x2="1200" y2="120"/>
-    <line x1="0" y1="180" x2="1200" y2="180"/>
-    <line x1="0" y1="240" x2="1200" y2="240"/>
-    <line x1="0" y1="300" x2="1200" y2="300"/>
-    <line x1="150" y1="0" x2="150" y2="380"/>
-    <line x1="300" y1="0" x2="300" y2="380"/>
-    <line x1="450" y1="0" x2="450" y2="380"/>
-    <line x1="600" y1="0" x2="600" y2="380"/>
-    <line x1="750" y1="0" x2="750" y2="380"/>
-    <line x1="900" y1="0" x2="900" y2="380"/>
-    <line x1="1050" y1="0" x2="1050" y2="380"/>
+    <!-- High-Tech Matrix / Cyber Grid Pattern -->
+    <g opacity="0.05" stroke="#FFFFFF" stroke-width="0.8">
+      <line x1="0" y1="60" x2="1200" y2="60"/>
+      <line x1="0" y1="120" x2="1200" y2="120"/>
+      <line x1="0" y1="180" x2="1200" y2="180"/>
+      <line x1="0" y1="240" x2="1200" y2="240"/>
+      <line x1="0" y1="300" x2="1200" y2="300"/>
+      <line x1="150" y1="0" x2="150" y2="380"/>
+      <line x1="300" y1="0" x2="300" y2="380"/>
+      <line x1="450" y1="0" x2="450" y2="380"/>
+      <line x1="600" y1="0" x2="600" y2="380"/>
+      <line x1="750" y1="0" x2="750" y2="380"/>
+      <line x1="900" y1="0" x2="900" y2="380"/>
+      <line x1="1050" y1="0" x2="1050" y2="380"/>
+    </g>
+
+    <!-- Left Geometric Spider-Web Network (Red Tone) -->
+    <g class="web-lines" stroke="#FF1744" stroke-width="1.2" fill="none">
+      <path d="M 0 0 L 180 65 L 140 180 L 0 120 Z"/>
+      <path d="M 0 0 L 300 110 L 220 240 L 0 240 Z"/>
+      <path d="M 0 0 L 440 160 L 340 380 L 0 380 Z"/>
+      <line x1="0" y1="0" x2="180" y2="65"/>
+      <line x1="0" y1="0" x2="300" y2="110"/>
+      <line x1="0" y1="0" x2="440" y2="160"/>
+      <line x1="180" y1="65" x2="300" y2="110"/>
+      <line x1="140" y1="180" x2="220" y2="240"/>
+      <line x1="180" y1="65" x2="140" y2="180"/>
+      <line x1="300" y1="110" x2="220" y2="240"/>
+      <line x1="140" y1="180" x2="0" y2="120"/>
+      <circle cx="180" cy="65" r="3.5" fill="#FF1744" filter="url(#glowRed)"/>
+      <circle cx="140" cy="180" r="3" fill="#FF2A4D"/>
+      <circle cx="300" cy="110" r="4" fill="#FF1744" filter="url(#glowRed)"/>
+      <circle cx="220" cy="240" r="3.5" fill="#FF2A4D"/>
+      <circle cx="440" cy="160" r="3" fill="#FF1744"/>
+    </g>
+
+    <!-- Glowing Spider-Web Bridge (Crossing from Red Web to Blue Web) -->
+    <g stroke="url(#spiderGlow)" stroke-width="1.3" fill="none">
+      <path d="M 300 110 Q 600 42 900 110" stroke-dasharray="4 3" opacity="0.4" filter="url(#glowCyan)"/>
+      <line x1="300" y1="110" x2="450" y2="72" opacity="0.45"/>
+      <line x1="450" y1="72" x2="600" y2="58" opacity="0.45"/>
+      <line x1="600" y1="58" x2="750" y2="72" opacity="0.45"/>
+      <line x1="750" y1="72" x2="900" y2="110" opacity="0.45"/>
+      <circle cx="450" cy="72" r="3.5" fill="#FF1744" filter="url(#glowRed)"/>
+      <circle cx="600" cy="58" r="4.2" fill="#FFFFFF" filter="url(#glowCyan)"/>
+      <circle cx="750" cy="72" r="3.5" fill="#00D2FF" filter="url(#glowCyan)"/>
+    </g>
+
+    <!-- Right Geometric Spider-Web Network (Cyan/Blue Tone) -->
+    <g class="web-lines" stroke="#00D2FF" stroke-width="1.2" fill="none">
+      <path d="M 1200 0 L 1020 65 L 1100 120 L 1200 60 Z"/>
+      <path d="M 1200 0 L 900 110 L 980 240 L 1200 240 Z"/>
+      <path d="M 1200 0 L 760 160 L 860 380 L 1200 380 Z"/>
+      <line x1="1200" y1="0" x2="1020" y2="65"/>
+      <line x1="1200" y1="0" x2="900" y2="110"/>
+      <line x1="1200" y1="0" x2="760" y2="160"/>
+      <line x1="900" y1="110" x2="1020" y2="65"/>
+      <line x1="1020" y1="65" x2="1100" y2="120"/>
+      <line x1="1100" y1="120" x2="980" y2="240"/>
+      <line x1="980" y1="240" x2="900" y2="110"/>
+      <circle cx="1020" cy="65" r="3.5" fill="#00D2FF" filter="url(#glowCyan)"/>
+      <circle cx="1100" cy="120" r="3" fill="#00E5FF"/>
+      <circle cx="900" cy="110" r="4" fill="#00D2FF" filter="url(#glowCyan)"/>
+      <circle cx="980" cy="240" r="3.5" fill="#00E5FF"/>
+      <circle cx="760" cy="160" r="3" fill="#00D2FF"/>
+    </g>
   </g>
 
-  <!-- Left Geometric Spider-Web Network (Red Tone) -->
-  <g class="web-lines" stroke="#FF1744" stroke-width="1.2" fill="none">
-    <path d="M 0 0 L 180 65 L 140 180 L 0 120 Z"/>
-    <path d="M 0 0 L 300 110 L 220 240 L 0 240 Z"/>
-    <path d="M 0 0 L 440 160 L 340 380 L 0 380 Z"/>
-    <line x1="0" y1="0" x2="180" y2="65"/>
-    <line x1="0" y1="0" x2="300" y2="110"/>
-    <line x1="0" y1="0" x2="440" y2="160"/>
-    <line x1="180" y1="65" x2="300" y2="110"/>
-    <line x1="140" y1="180" x2="220" y2="240"/>
-    <line x1="180" y1="65" x2="140" y2="180"/>
-    <line x1="300" y1="110" x2="220" y2="240"/>
-    <line x1="140" y1="180" x2="0" y2="120"/>
-    <circle cx="180" cy="65" r="3.5" fill="#FF1744" filter="url(#glowRed)"/>
-    <circle cx="140" cy="180" r="3" fill="#FF2A4D"/>
-    <circle cx="300" cy="110" r="4" fill="#FF1744" filter="url(#glowRed)"/>
-    <circle cx="220" cy="240" r="3.5" fill="#FF2A4D"/>
-    <circle cx="440" cy="160" r="3" fill="#FF1744"/>
-  </g>
-
-  <!-- Glowing Spider-Web Bridge (Crossing from Red Web to Blue Web) -->
-  <g stroke="url(#spiderGlow)" stroke-width="1.3" fill="none">
-    <!-- Main Bridge Strands -->
-    <path d="M 300 110 Q 600 42 900 110" stroke-dasharray="4 3" opacity="0.4" filter="url(#glowCyan)"/>
-    <line x1="300" y1="110" x2="450" y2="72" opacity="0.5"/>
-    <line x1="450" y1="72" x2="600" y2="58" opacity="0.5"/>
-    <line x1="600" y1="58" x2="750" y2="72" opacity="0.5"/>
-    <line x1="750" y1="72" x2="900" y2="110" opacity="0.5"/>
-
-    <!-- Arching Lower Bridge Strut -->
-    <line x1="450" y1="72" x2="600" y2="124" stroke="#FFFFFF" stroke-width="0.8" opacity="0.18"/>
-    <line x1="750" y1="72" x2="600" y2="124" stroke="#FFFFFF" stroke-width="0.8" opacity="0.18"/>
-    <line x1="600" y1="58" x2="600" y2="124" stroke="url(#spiderGlow)" stroke-width="1" stroke-dasharray="2 3" opacity="0.3"/>
-
-    <!-- Bridge Nodes -->
-    <circle cx="450" cy="72" r="3.5" fill="#FF1744" filter="url(#glowRed)"/>
-    <circle cx="600" cy="58" r="4.2" fill="#FFFFFF" filter="url(#glowCyan)"/>
-    <circle cx="750" cy="72" r="3.5" fill="#00D2FF" filter="url(#glowCyan)"/>
-  </g>
-
-  <!-- Right Geometric Spider-Web Network (Cyan/Blue Tone) -->
-  <g class="web-lines" stroke="#00D2FF" stroke-width="1.2" fill="none">
-    <path d="M 1200 0 L 1020 65 L 1100 120 L 1200 60 Z"/>
-    <path d="M 1200 0 L 900 110 L 980 240 L 1200 240 Z"/>
-    <path d="M 1200 0 L 760 160 L 860 380 L 1200 380 Z"/>
-    <line x1="1200" y1="0" x2="1020" y2="65"/>
-    <line x1="1200" y1="0" x2="900" y2="110"/>
-    <line x1="1200" y1="0" x2="760" y2="160"/>
-    <line x1="900" y1="110" x2="1020" y2="65"/>
-    <line x1="1020" y1="65" x2="1100" y2="120"/>
-    <line x1="1100" y1="120" x2="980" y2="240"/>
-    <line x1="980" y1="240" x2="900" y2="110"/>
-    <circle cx="1020" cy="65" r="3.5" fill="#00D2FF" filter="url(#glowCyan)"/>
-    <circle cx="1100" cy="120" r="3" fill="#00E5FF"/>
-    <circle cx="900" cy="110" r="4" fill="#00D2FF" filter="url(#glowCyan)"/>
-    <circle cx="980" cy="240" r="3.5" fill="#00E5FF"/>
-    <circle cx="760" cy="160" r="3" fill="#00D2FF"/>
-  </g>
-
-  <!-- Animated Cyber Spider with Realistic Predatory Gait & Stop-and-Go Stalking -->
+  <!-- Animated Cyber Spider with Realistic Predatory Gait -->
   <g>
     <animateMotion 
       path="M 0 0 L 180 65 L 180 65 L 300 110 L 300 110 L 450 72 L 600 58 L 600 58 L 750 72 L 900 110 L 900 110 L 1020 65 L 1020 65 L 1100 120 L 980 240 L 980 240 L 900 110 L 750 72 L 600 58 L 600 58 L 450 72 L 300 110 L 220 240 L 140 180 L 0 120 L 0 0" 
@@ -160,24 +156,16 @@
       keyTimes="0.0; 0.058; 0.081; 0.127; 0.154; 0.2; 0.246; 0.285; 0.331; 0.377; 0.404; 0.442; 0.465; 0.5; 0.55; 0.577; 0.623; 0.669; 0.715; 0.746; 0.792; 0.838; 0.885; 0.919; 0.962; 1.0"
     />
 
-    <!-- Spider Organic Body Sway -->
+    <!-- Spider Body & Moving Legs Group (Head facing +X forward) -->
     <g transform="scale(0.85)">
-      <animateTransform attributeName="transform" type="rotate" values="-1.8 0 0; 1.8 0 0; -1.8 0 0" dur="2.5s" repeatCount="indefinite" additive="sum"/>
-
-      <!-- Spider Abdomen (Back) with breathing pulse -->
-      <ellipse cx="-10" cy="0" rx="11" ry="8" fill="#0d111d" stroke="#FF1744" stroke-width="2" filter="url(#glowRed)">
-        <animate attributeName="ry" values="7.8; 8.4; 7.8" dur="2.4s" repeatCount="indefinite"/>
-      </ellipse>
-      <!-- Spider Emblem on Abdomen -->
+      <!-- Spider Abdomen (Back) -->
+      <ellipse cx="-10" cy="0" rx="11" ry="8" fill="#0d111d" stroke="#FF1744" stroke-width="2" filter="url(#glowRed)"/>
       <polygon points="-8,-4 -5,0 -8,4 -14,2 -14,-2" fill="#FF1744"/>
       
       <!-- Spider Cephalothorax (Front / Head) -->
       <ellipse cx="6" cy="0" rx="7" ry="5.5" fill="#161b2b" stroke="#00D2FF" stroke-width="1.8" filter="url(#glowCyan)"/>
-      <!-- Glowing Spider Eyes -->
       <circle cx="10" cy="-2.5" r="1.4" fill="#00E5FF" filter="url(#glowCyan)"/>
       <circle cx="10" cy="2.5" r="1.4" fill="#00E5FF" filter="url(#glowCyan)"/>
-      <circle cx="12" cy="-1.2" r="0.8" fill="#FF1744"/>
-      <circle cx="12" cy="1.2" r="0.8" fill="#FF1744"/>
 
       <!-- Probing Front Pedipalps (Sensory Feelers) -->
       <g>
@@ -189,46 +177,38 @@
         <path d="M 11 2 L 17 3.5 L 19 1.5" fill="none" stroke="#00E5FF" stroke-width="1.3" stroke-linecap="round"/>
       </g>
 
-      <!-- 8 Walking / Crawling Cybernetic Legs (Natural Articulated Gait) -->
-      <!-- LEFT LEGS (Negative Y) -->
-      <!-- Leg L1 (Front Left) -->
+      <!-- 8 Walking Legs -->
+      <!-- Left Legs -->
       <g>
         <animateTransform attributeName="transform" type="rotate" values="-15 4 -4; 15 4 -4; -15 4 -4" dur="0.24s" repeatCount="indefinite"/>
         <path d="M 4 -4 L 14 -14 L 24 -10" fill="none" stroke="#FF1744" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </g>
-      <!-- Leg L2 (Mid-Front Left) -->
       <g>
         <animateTransform attributeName="transform" type="rotate" values="15 2 -5; -15 2 -5; 15 2 -5" dur="0.24s" repeatCount="indefinite"/>
         <path d="M 2 -5 L 8 -18 L 16 -22" fill="none" stroke="#FF2A4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </g>
-      <!-- Leg L3 (Mid-Back Left) -->
       <g>
         <animateTransform attributeName="transform" type="rotate" values="-15 -2 -5; 15 -2 -5; -15 -2 -5" dur="0.24s" repeatCount="indefinite"/>
         <path d="M -2 -5 L -6 -18 L -14 -22" fill="none" stroke="#00D2FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </g>
-      <!-- Leg L4 (Back Left) -->
       <g>
         <animateTransform attributeName="transform" type="rotate" values="15 -4 -4; -15 -4 -4; 15 -4 -4" dur="0.24s" repeatCount="indefinite"/>
         <path d="M -4 -4 L -16 -14 L -24 -12" fill="none" stroke="#00E5FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </g>
 
-      <!-- RIGHT LEGS (Positive Y) -->
-      <!-- Leg R1 (Front Right) -->
+      <!-- Right Legs -->
       <g>
         <animateTransform attributeName="transform" type="rotate" values="15 4 4; -15 4 4; 15 4 4" dur="0.24s" repeatCount="indefinite"/>
         <path d="M 4 4 L 14 14 L 24 10" fill="none" stroke="#FF1744" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </g>
-      <!-- Leg R2 (Mid-Front Right) -->
       <g>
         <animateTransform attributeName="transform" type="rotate" values="-15 2 5; 15 2 5; -15 2 5" dur="0.24s" repeatCount="indefinite"/>
         <path d="M 2 5 L 8 18 L 16 22" fill="none" stroke="#FF2A4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </g>
-      <!-- Leg R3 (Mid-Back Right) -->
       <g>
         <animateTransform attributeName="transform" type="rotate" values="15 -2 5; -15 -2 5; 15 -2 5" dur="0.24s" repeatCount="indefinite"/>
         <path d="M -2 5 L -6 18 L -14 22" fill="none" stroke="#00D2FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </g>
-      <!-- Leg R4 (Back Right) -->
       <g>
         <animateTransform attributeName="transform" type="rotate" values="-15 -4 4; 15 -4 4; -15 -4 4" dur="0.24s" repeatCount="indefinite"/>
         <path d="M -4 4 L -16 14 L -24 12" fill="none" stroke="#00E5FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -237,38 +217,24 @@
   </g>
 
   <!-- Tagline Pill Badge (Center) -->
-  <g transform="translate(600, 140)">
+  <g transform="translate(600, 135)">
     <rect x="-170" y="-14" width="340" height="28" rx="14" fill="#0b1323" stroke="url(#spiderGlow)" stroke-width="1.2" opacity="0.95"/>
     <text x="0" y="4.5" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'JetBrains Mono', monospace" font-size="11" font-weight="700" letter-spacing="3" text-anchor="middle">YOUR FRIENDLY NEIGHBORHOOD DEV</text>
   </g>
 
-  <!-- Cinematic Spider-Man Movie Intro Animated Name -->
-  <!-- Layer 1: Electric Cyan Chromatic Aberration Aura -->
-  <text x="600" y="222" fill="#00E5FF" font-family="-apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Arial, sans-serif" font-size="48" font-weight="900" letter-spacing="3" text-anchor="middle" filter="url(#glowCyan)" opacity="0.45">
-    <animate attributeName="dx" values="-2.5; 2; -1.5; 1.5; -2.5" dur="3s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.3; 0.65; 0.25; 0.6; 0.3" dur="3s" repeatCount="indefinite"/>
-    AKBAR RESTU SETIAJI
-  </text>
-
-  <!-- Layer 2: Crimson Red Chromatic Aberration Aura -->
-  <text x="600" y="222" fill="#FF1744" font-family="-apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Arial, sans-serif" font-size="48" font-weight="900" letter-spacing="3" text-anchor="middle" filter="url(#glowRed)" opacity="0.45">
-    <animate attributeName="dx" values="2.5; -2; 1.5; -1.5; 2.5" dur="3s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.45; 0.25; 0.65; 0.3; 0.45" dur="3s" repeatCount="indefinite"/>
-    AKBAR RESTU SETIAJI
-  </text>
-
-  <!-- Layer 3: Main Chrome Title with Sweeping Movie Light Beam Reflection -->
-  <text x="600" y="222" fill="url(#spiderTitleSweep)" stroke="#090d16" stroke-width="0.8" font-family="-apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Arial, sans-serif" font-size="48" font-weight="900" letter-spacing="3" text-anchor="middle" filter="drop-shadow(0px 4px 18px rgba(0,0,0,0.95))">
+  <!-- Main Headline Name (Clean, Razor-Sharp, Zero Blur/Glitch) -->
+  <text x="600" y="212" fill="url(#nameGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Arial, sans-serif" font-size="48" font-weight="900" letter-spacing="3" text-anchor="middle" filter="drop-shadow(0px 4px 16px rgba(0,0,0,0.95))">
     AKBAR RESTU SETIAJI
   </text>
 
   <!-- Subtitle -->
-  <text x="600" y="266" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'JetBrains Mono', 'Fira Code', monospace" font-size="15" font-weight="700" letter-spacing="2.5" text-anchor="middle">
+  <text x="600" y="254" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'JetBrains Mono', 'Fira Code', monospace" font-size="15" font-weight="700" letter-spacing="2.5" text-anchor="middle">
     ERP &amp; SYSTEMS INTEGRATION SPECIALIST  <tspan fill="#FF2A4D">|</tspan>  ODOO DEVELOPER
   </text>
 
-
-  <!-- Glowing Top & Bottom Cyber Accent Bars -->
+  <!-- Glowing Top Accent Bar -->
   <line x1="0" y1="2" x2="1200" y2="2" stroke="url(#spiderGlow)" stroke-width="3"/>
-  <line x1="0" y1="378" x2="1200" y2="378" stroke="url(#spiderGlow)" stroke-width="3"/>
+
+  <!-- Glowing Smooth Spider-Web Wave Bottom Accent Bar (Bukan Garis Kotak Lurus) -->
+  <path d="M 0 340 C 200 320, 400 380, 600 350 C 800 315, 1000 365, 1200 325" stroke="url(#spiderGlow)" stroke-width="3" fill="none"/>
 </svg>
