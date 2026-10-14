@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="100%" height="100%">
   <defs>
-    <!-- Background Gradients -->
+    <!-- Background Gradient -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#05070c"/>
       <stop offset="35%" stop-color="#0b101d"/>
@@ -22,16 +22,6 @@
       <stop offset="100%" stop-color="#E2E8F0"/>
     </linearGradient>
 
-    <linearGradient id="redAccent" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FF2A4D"/>
-      <stop offset="100%" stop-color="#B7092B"/>
-    </linearGradient>
-
-    <linearGradient id="blueAccent" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00D2FF"/>
-      <stop offset="100%" stop-color="#0066FF"/>
-    </linearGradient>
-
     <radialGradient id="centerLight" cx="50%" cy="40%" r="60%">
       <stop offset="0%" stop-color="#FF1744" stop-opacity="0.16"/>
       <stop offset="40%" stop-color="#0066FF" stop-opacity="0.08"/>
@@ -39,26 +29,26 @@
     </radialGradient>
 
     <radialGradient id="cornerGlowRed" cx="0%" cy="0%" r="50%">
-      <stop offset="0%" stop-color="#FF1744" stop-opacity="0.25"/>
+      <stop offset="0%" stop-color="#FF1744" stop-opacity="0.28"/>
       <stop offset="100%" stop-color="#FF1744" stop-opacity="0"/>
     </radialGradient>
 
     <radialGradient id="cornerGlowBlue" cx="100%" cy="100%" r="50%">
-      <stop offset="0%" stop-color="#00D2FF" stop-opacity="0.22"/>
+      <stop offset="0%" stop-color="#00D2FF" stop-opacity="0.25"/>
       <stop offset="100%" stop-color="#00D2FF" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Filters for Glow -->
-    <filter id="glowRed" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
+    <!-- Glowing Filters -->
+    <filter id="glowRed" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
 
-    <filter id="glowSoft" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
+    <filter id="glowCyan" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -68,18 +58,13 @@
 
   <style>
     @keyframes pulseWeb {
-      0%, 100% { opacity: 0.18; }
-      50% { opacity: 0.32; }
-    }
-    @keyframes floatSpider {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-4px); }
+      0%, 100% { opacity: 0.22; }
+      50% { opacity: 0.40; }
     }
     .web-lines { animation: pulseWeb 6s ease-in-out infinite; }
-    .spider-icon { animation: floatSpider 4s ease-in-out infinite; transform-origin: center; }
   </style>
 
-  <!-- Base Background -->
+  <!-- Base Canvas -->
   <rect width="1200" height="380" fill="url(#bgGrad)"/>
   <rect width="1200" height="380" fill="url(#centerLight)"/>
   <rect width="1200" height="380" fill="url(#cornerGlowRed)"/>
@@ -103,86 +88,139 @@
 
   <!-- Left Geometric Spider-Web Network (Red Tone) -->
   <g class="web-lines" stroke="#FF1744" stroke-width="1.2" fill="none">
-    <path d="M 0 0 L 220 80 L 160 220 L 0 160 Z"/>
-    <path d="M 0 0 L 340 120 L 260 300 L 0 260 Z"/>
-    <path d="M 0 0 L 460 160 L 360 380 L 0 380 Z"/>
-    <line x1="0" y1="0" x2="220" y2="80"/>
-    <line x1="0" y1="0" x2="340" y2="120"/>
-    <line x1="0" y1="0" x2="460" y2="160"/>
-    <line x1="0" y1="0" x2="160" y2="220"/>
-    <line x1="0" y1="0" x2="260" y2="300"/>
-    <circle cx="220" cy="80" r="3.5" fill="#FF1744"/>
-    <circle cx="160" cy="220" r="3" fill="#FF2A4D"/>
-    <circle cx="340" cy="120" r="3" fill="#FF1744"/>
-    <circle cx="260" cy="300" r="3.5" fill="#FF2A4D"/>
-    <circle cx="460" cy="160" r="2.5" fill="#FF1744"/>
+    <path d="M 0 0 L 180 65 L 140 200 L 0 140 Z"/>
+    <path d="M 0 0 L 300 110 L 220 260 L 0 240 Z"/>
+    <path d="M 0 0 L 440 160 L 340 380 L 0 380 Z"/>
+    <line x1="0" y1="0" x2="180" y2="65"/>
+    <line x1="0" y1="0" x2="300" y2="110"/>
+    <line x1="0" y1="0" x2="440" y2="160"/>
+    <line x1="180" y1="65" x2="300" y2="110"/>
+    <line x1="140" y1="200" x2="220" y2="260"/>
+    <line x1="180" y1="65" x2="140" y2="200"/>
+    <line x1="300" y1="110" x2="220" y2="260"/>
+    <circle cx="180" cy="65" r="3.5" fill="#FF1744" filter="url(#glowRed)"/>
+    <circle cx="140" cy="200" r="3" fill="#FF2A4D"/>
+    <circle cx="300" cy="110" r="4" fill="#FF1744" filter="url(#glowRed)"/>
+    <circle cx="220" cy="260" r="3.5" fill="#FF2A4D"/>
+    <circle cx="440" cy="160" r="3" fill="#FF1744"/>
   </g>
+
+  <!-- Dynamic Spider Silk Thread (Drops from Node (300, 110) to (300, 230)) -->
+  <line x1="300" y1="110" x2="300" stroke="#00E5FF" stroke-width="1.5" stroke-dasharray="3 2" filter="url(#glowCyan)">
+    <animate attributeName="y2" values="110; 110; 230; 230; 230; 110; 110" keyTimes="0; 0.18; 0.35; 0.52; 0.60; 0.76; 1" dur="16s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0; 0.2; 0.9; 0.9; 0.9; 0.2; 0" keyTimes="0; 0.16; 0.35; 0.52; 0.60; 0.76; 1" dur="16s" repeatCount="indefinite"/>
+  </line>
 
   <!-- Right Geometric Spider-Web Network (Cyan/Blue Tone) -->
   <g class="web-lines" stroke="#00D2FF" stroke-width="1.2" fill="none">
-    <path d="M 1200 0 L 980 80 L 1040 220 L 1200 160 Z"/>
-    <path d="M 1200 0 L 860 120 L 940 300 L 1200 260 Z"/>
-    <path d="M 1200 0 L 740 160 L 840 380 L 1200 380 Z"/>
-    <line x1="1200" y1="0" x2="980" y2="80"/>
-    <line x1="1200" y1="0" x2="860" y2="120"/>
-    <line x1="1200" y1="0" x2="740" y2="160"/>
-    <line x1="1200" y1="0" x2="1040" y2="220"/>
-    <line x1="1200" y1="0" x2="940" y2="300"/>
-    <circle cx="980" cy="80" r="3.5" fill="#00D2FF"/>
-    <circle cx="1040" cy="220" r="3" fill="#00E5FF"/>
-    <circle cx="860" cy="120" r="3" fill="#00D2FF"/>
-    <circle cx="940" cy="300" r="3.5" fill="#00E5FF"/>
-    <circle cx="740" cy="160" r="2.5" fill="#00D2FF"/>
+    <path d="M 1200 0 L 1020 65 L 1060 200 L 1200 140 Z"/>
+    <path d="M 1200 0 L 900 110 L 980 260 L 1200 240 Z"/>
+    <path d="M 1200 0 L 760 160 L 860 380 L 1200 380 Z"/>
+    <line x1="1200" y1="0" x2="1020" y2="65"/>
+    <line x1="1200" y1="0" x2="900" y2="110"/>
+    <line x1="1200" y1="0" x2="760" y2="160"/>
+    <line x1="1020" y1="65" x2="900" y2="110"/>
+    <line x1="1060" y1="200" x2="980" y2="260"/>
+    <circle cx="1020" cy="65" r="3.5" fill="#00D2FF" filter="url(#glowCyan)"/>
+    <circle cx="1060" cy="200" r="3" fill="#00E5FF"/>
+    <circle cx="900" cy="110" r="4" fill="#00D2FF" filter="url(#glowCyan)"/>
+    <circle cx="980" cy="260" r="3.5" fill="#00E5FF"/>
+    <circle cx="760" cy="160" r="3" fill="#00D2FF"/>
   </g>
 
-  <!-- Modern Stylized Tech Spider Emblem (Center Top) -->
-  <g class="spider-icon" transform="translate(600, 72) scale(0.85)">
-    <!-- Spider Core Body -->
-    <path d="M 0 -26 L 8 -12 L 5 4 L 0 10 L -5 4 L -8 -12 Z" fill="#FF1744" filter="url(#glowRed)"/>
-    <path d="M 0 14 L 11 26 L 8 46 L 0 58 L -8 46 L -11 26 Z" fill="#FF1744" filter="url(#glowRed)"/>
-    <circle cx="0" cy="4" r="3" fill="#00E5FF" filter="url(#glowSoft)"/>
+  <!-- Animated Crawling / Walking Cyber Spider -->
+  <!-- Spider Motion Path along the Web Strands -->
+  <g>
+    <animateMotion 
+      path="M 0 0 L 180 65 L 300 110 L 300 230 L 300 230 L 300 110 L 220 260 L 140 200 L 0 140 L 0 0" 
+      dur="16s" 
+      repeatCount="indefinite" 
+      rotate="auto" 
+      keyTimes="0; 0.10; 0.18; 0.35; 0.52; 0.68; 0.79; 0.89; 0.96; 1"
+    />
 
-    <!-- Left Spider Legs (Angular Cybernetic / Iron Spider Style) -->
-    <!-- Top Left Leg -->
-    <path d="M -6 -14 L -24 -36 L -52 -44 L -44 -26 L -20 -18" fill="none" stroke="#FF2A4D" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
-    <!-- Upper Mid Left Leg -->
-    <path d="M -7 -6 L -32 -16 L -66 -16 L -56 -2 L -24 0" fill="none" stroke="#FF1744" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
-    <!-- Lower Mid Left Leg -->
-    <path d="M -7 20 L -30 26 L -62 44 L -48 54 L -18 36" fill="none" stroke="#00D2FF" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
-    <!-- Bottom Left Leg -->
-    <path d="M -6 38 L -24 56 L -44 86 L -32 88 L -12 60" fill="none" stroke="#00E5FF" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+    <!-- Spider Body & Moving Legs Group (Head facing +X forward) -->
+    <g transform="scale(0.85)">
+      <!-- Spider Abdomen (Back) -->
+      <ellipse cx="-10" cy="0" rx="11" ry="8" fill="#0d111d" stroke="#FF1744" stroke-width="2" filter="url(#glowRed)"/>
+      <!-- Spider Emblem on Abdomen -->
+      <polygon points="-8,-4 -5,0 -8,4 -14,2 -14,-2" fill="#FF1744"/>
+      
+      <!-- Spider Cephalothorax (Front / Head) -->
+      <ellipse cx="6" cy="0" rx="7" ry="5.5" fill="#161b2b" stroke="#00D2FF" stroke-width="1.8" filter="url(#glowCyan)"/>
+      <!-- Glowing Spider Eyes -->
+      <circle cx="10" cy="-2.5" r="1.4" fill="#00E5FF" filter="url(#glowCyan)"/>
+      <circle cx="10" cy="2.5" r="1.4" fill="#00E5FF" filter="url(#glowCyan)"/>
+      <circle cx="12" cy="-1.2" r="0.8" fill="#FF1744"/>
+      <circle cx="12" cy="1.2" r="0.8" fill="#FF1744"/>
 
-    <!-- Right Spider Legs (Mirrored) -->
-    <!-- Top Right Leg -->
-    <path d="M 6 -14 L 24 -36 L 52 -44 L 44 -26 L 20 -18" fill="none" stroke="#FF2A4D" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
-    <!-- Upper Mid Right Leg -->
-    <path d="M 7 -6 L 32 -16 L 66 -16 L 56 -2 L 24 0" fill="none" stroke="#FF1744" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
-    <!-- Lower Mid Right Leg -->
-    <path d="M 7 20 L 30 26 L 62 44 L 48 54 L 18 36" fill="none" stroke="#00D2FF" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
-    <!-- Bottom Right Leg -->
-    <path d="M 6 38 L 24 56 L 44 86 L 32 88 L 12 60" fill="none" stroke="#00E5FF" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+      <!-- 8 Walking / Crawling Cybernetic Legs -->
+      <!-- LEFT LEGS (Negative Y) -->
+      <!-- Leg L1 (Front Left) -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="-18 4 -4; 18 4 -4; -18 4 -4" dur="0.28s" repeatCount="indefinite"/>
+        <path d="M 4 -4 L 14 -14 L 24 -10" fill="none" stroke="#FF1744" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <!-- Leg L2 (Mid-Front Left) -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="18 2 -5; -18 2 -5; 18 2 -5" dur="0.28s" repeatCount="indefinite"/>
+        <path d="M 2 -5 L 8 -18 L 16 -22" fill="none" stroke="#FF2A4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <!-- Leg L3 (Mid-Back Left) -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="-18 -2 -5; 18 -2 -5; -18 -2 -5" dur="0.28s" repeatCount="indefinite"/>
+        <path d="M -2 -5 L -6 -18 L -14 -22" fill="none" stroke="#00D2FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <!-- Leg L4 (Back Left) -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="18 -4 -4; -18 -4 -4; 18 -4 -4" dur="0.28s" repeatCount="indefinite"/>
+        <path d="M -4 -4 L -16 -14 L -24 -12" fill="none" stroke="#00E5FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+
+      <!-- RIGHT LEGS (Positive Y) -->
+      <!-- Leg R1 (Front Right) -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="18 4 4; -18 4 4; 18 4 4" dur="0.28s" repeatCount="indefinite"/>
+        <path d="M 4 4 L 14 14 L 24 10" fill="none" stroke="#FF1744" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <!-- Leg R2 (Mid-Front Right) -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="-18 2 5; 18 2 5; -18 2 5" dur="0.28s" repeatCount="indefinite"/>
+        <path d="M 2 5 L 8 18 L 16 22" fill="none" stroke="#FF2A4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <!-- Leg R3 (Mid-Back Right) -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="18 -2 5; -18 -2 5; 18 -2 5" dur="0.28s" repeatCount="indefinite"/>
+        <path d="M -2 5 L -6 18 L -14 22" fill="none" stroke="#00D2FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <!-- Leg R4 (Back Right) -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="-18 -4 4; 18 -4 4; -18 -4 4" dur="0.28s" repeatCount="indefinite"/>
+        <path d="M -4 4 L -16 14 L -24 12" fill="none" stroke="#00E5FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </g>
   </g>
 
-  <!-- Tagline Pill Badge -->
-  <g transform="translate(600, 160)">
+  <!-- Tagline Pill Badge (Center) -->
+  <g transform="translate(600, 140)">
     <rect x="-190" y="-14" width="380" height="28" rx="14" fill="#0b1323" stroke="url(#spiderGlow)" stroke-width="1.2" opacity="0.95"/>
     <circle cx="-168" cy="0" r="4" fill="#FF1744" filter="url(#glowRed)"/>
-    <circle cx="168" cy="0" r="4" fill="#00E5FF" filter="url(#glowSoft)"/>
+    <circle cx="168" cy="0" r="4" fill="#00E5FF" filter="url(#glowCyan)"/>
     <text x="0" y="4.5" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'JetBrains Mono', monospace" font-size="11" font-weight="700" letter-spacing="3" text-anchor="middle">YOUR FRIENDLY NEIGHBORHOOD DEV</text>
   </g>
 
   <!-- Main Headline Name -->
-  <text x="600" y="228" fill="url(#nameGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Arial, sans-serif" font-size="46" font-weight="900" letter-spacing="3" text-anchor="middle" filter="drop-shadow(0px 4px 16px rgba(0,0,0,0.9))">
+  <text x="600" y="215" fill="url(#nameGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Arial, sans-serif" font-size="48" font-weight="900" letter-spacing="3" text-anchor="middle" filter="drop-shadow(0px 4px 16px rgba(0,0,0,0.95))">
     AKBAR RESTU SETIAJI
   </text>
 
   <!-- Subtitle -->
-  <text x="600" y="266" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'JetBrains Mono', 'Fira Code', monospace" font-size="14.5" font-weight="700" letter-spacing="2.5" text-anchor="middle">
+  <text x="600" y="258" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'JetBrains Mono', 'Fira Code', monospace" font-size="15" font-weight="700" letter-spacing="2.5" text-anchor="middle">
     ERP &amp; SYSTEMS INTEGRATION SPECIALIST  <tspan fill="#FF2A4D">|</tspan>  ODOO DEVELOPER
   </text>
 
   <!-- Tech Badges Pills at Bottom -->
-  <g transform="translate(600, 310)">
+  <g transform="translate(600, 305)">
     <!-- Odoo -->
     <g transform="translate(-230, 0)">
       <rect x="-42" y="-12" width="84" height="24" rx="12" fill="#140f1a" stroke="#A855F7" stroke-width="1.2"/>
@@ -210,7 +248,7 @@
     </g>
   </g>
 
-  <!-- Glowing Top & Bottom Cyber Spider Accent Bars -->
-  <line x1="0" y1="2" x2="1200" y2="2" stroke="url(#spiderGlow)" stroke-width="3" filter="url(#glowSoft)"/>
-  <line x1="0" y1="378" x2="1200" y2="378" stroke="url(#spiderGlow)" stroke-width="3" filter="url(#glowSoft)"/>
+  <!-- Glowing Top & Bottom Cyber Accent Bars -->
+  <line x1="0" y1="2" x2="1200" y2="2" stroke="url(#spiderGlow)" stroke-width="3"/>
+  <line x1="0" y1="378" x2="1200" y2="378" stroke="url(#spiderGlow)" stroke-width="3"/>
 </svg>
