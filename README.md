@@ -124,7 +124,7 @@ Available for enterprise ERP consultations, multi-system integration initiatives
   </a>
 </p>
 
-<!-- Spider-Man Themed Dynamic Wave Footer Banner -->
+<!-- Spider-Man Themed Dynamic Footer Banner -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=FF1744,E62429,0066FF,00D2FF&height=90&section=footer" width="100%" alt="Footer Banner" />
+  <img src="assets/footer.svg" width="100%" alt="Footer Banner" />
 </p>
