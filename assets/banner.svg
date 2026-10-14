@@ -16,10 +16,15 @@
       <stop offset="100%" stop-color="#00E5FF"/>
     </linearGradient>
 
-    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="60%" stop-color="#F1F5F9"/>
-      <stop offset="100%" stop-color="#E2E8F0"/>
+    <linearGradient id="spiderTitleSweep" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E2E8F0" />
+      <stop offset="25%" stop-color="#FFFFFF" />
+      <stop offset="45%" stop-color="#00D2FF" />
+      <stop offset="55%" stop-color="#FF1744" />
+      <stop offset="75%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+      <animate attributeName="x1" values="-150%; 150%" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="-50%; 250%" dur="4s" repeatCount="indefinite"/>
     </linearGradient>
 
     <radialGradient id="centerLight" cx="50%" cy="40%" r="60%">
@@ -237,8 +242,23 @@
     <text x="0" y="4.5" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'JetBrains Mono', monospace" font-size="11" font-weight="700" letter-spacing="3" text-anchor="middle">YOUR FRIENDLY NEIGHBORHOOD DEV</text>
   </g>
 
-  <!-- Main Headline Name -->
-  <text x="600" y="222" fill="url(#nameGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Arial, sans-serif" font-size="48" font-weight="900" letter-spacing="3" text-anchor="middle" filter="drop-shadow(0px 4px 16px rgba(0,0,0,0.95))">
+  <!-- Cinematic Spider-Man Movie Intro Animated Name -->
+  <!-- Layer 1: Electric Cyan Chromatic Aberration Aura -->
+  <text x="600" y="222" fill="#00E5FF" font-family="-apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Arial, sans-serif" font-size="48" font-weight="900" letter-spacing="3" text-anchor="middle" filter="url(#glowCyan)" opacity="0.45">
+    <animate attributeName="dx" values="-2.5; 2; -1.5; 1.5; -2.5" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3; 0.65; 0.25; 0.6; 0.3" dur="3s" repeatCount="indefinite"/>
+    AKBAR RESTU SETIAJI
+  </text>
+
+  <!-- Layer 2: Crimson Red Chromatic Aberration Aura -->
+  <text x="600" y="222" fill="#FF1744" font-family="-apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Arial, sans-serif" font-size="48" font-weight="900" letter-spacing="3" text-anchor="middle" filter="url(#glowRed)" opacity="0.45">
+    <animate attributeName="dx" values="2.5; -2; 1.5; -1.5; 2.5" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.45; 0.25; 0.65; 0.3; 0.45" dur="3s" repeatCount="indefinite"/>
+    AKBAR RESTU SETIAJI
+  </text>
+
+  <!-- Layer 3: Main Chrome Title with Sweeping Movie Light Beam Reflection -->
+  <text x="600" y="222" fill="url(#spiderTitleSweep)" stroke="#090d16" stroke-width="0.8" font-family="-apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Arial, sans-serif" font-size="48" font-weight="900" letter-spacing="3" text-anchor="middle" filter="drop-shadow(0px 4px 18px rgba(0,0,0,0.95))">
     AKBAR RESTU SETIAJI
   </text>
 
