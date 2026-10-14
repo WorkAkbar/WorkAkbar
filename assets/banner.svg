@@ -149,10 +149,10 @@
   <g>
     <animateMotion 
       path="M 0 0 L 180 65 L 180 65 L 300 110 L 300 110 L 450 72 L 600 58 L 600 58 L 750 72 L 900 110 L 900 110 L 1020 65 L 1020 65 L 1100 120 L 980 240 L 980 240 L 900 110 L 750 72 L 600 58 L 600 58 L 450 72 L 300 110 L 220 240 L 140 180 L 0 120 L 0 0" 
-      dur="71s" 
+      dur="45s" 
       repeatCount="indefinite" 
       rotate="auto" 
-      keyTimes="0.0; 0.056; 0.092; 0.134; 0.176; 0.218; 0.261; 0.317; 0.359; 0.401; 0.444; 0.479; 0.507; 0.535; 0.585; 0.62; 0.662; 0.704; 0.746; 0.775; 0.817; 0.859; 0.901; 0.93; 0.965; 1.0"
+      keyTimes="0.0; 0.056; 0.083; 0.128; 0.159; 0.204; 0.249; 0.289; 0.334; 0.379; 0.41; 0.451; 0.478; 0.511; 0.561; 0.592; 0.637; 0.682; 0.726; 0.758; 0.803; 0.848; 0.892; 0.926; 0.966; 1.0"
     />
 
     <!-- Spider Organic Body Sway -->
@@ -176,11 +176,11 @@
 
       <!-- Probing Front Pedipalps (Sensory Feelers) -->
       <g>
-        <animateTransform attributeName="transform" type="rotate" values="-12 11 -2; 14 11 -2; -12 11 -2" dur="1.1s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="rotate" values="-12 11 -2; 14 11 -2; -12 11 -2" dur="0.7s" repeatCount="indefinite"/>
         <path d="M 11 -2 L 17 -3.5 L 19 -1.5" fill="none" stroke="#00E5FF" stroke-width="1.3" stroke-linecap="round"/>
       </g>
       <g>
-        <animateTransform attributeName="transform" type="rotate" values="12 11 2; -14 11 2; 12 11 2" dur="1.1s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="rotate" values="12 11 2; -14 11 2; 12 11 2" dur="0.7s" repeatCount="indefinite"/>
         <path d="M 11 2 L 17 3.5 L 19 1.5" fill="none" stroke="#00E5FF" stroke-width="1.3" stroke-linecap="round"/>
       </g>
 
@@ -188,44 +188,44 @@
       <!-- LEFT LEGS (Negative Y) -->
       <!-- Leg L1 (Front Left) -->
       <g>
-        <animateTransform attributeName="transform" type="rotate" values="-15 4 -4; 15 4 -4; -15 4 -4" dur="0.85s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="rotate" values="-15 4 -4; 15 4 -4; -15 4 -4" dur="0.40s" repeatCount="indefinite"/>
         <path d="M 4 -4 L 14 -14 L 24 -10" fill="none" stroke="#FF1744" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </g>
       <!-- Leg L2 (Mid-Front Left) -->
       <g>
-        <animateTransform attributeName="transform" type="rotate" values="15 2 -5; -15 2 -5; 15 2 -5" dur="0.85s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="rotate" values="15 2 -5; -15 2 -5; 15 2 -5" dur="0.40s" repeatCount="indefinite"/>
         <path d="M 2 -5 L 8 -18 L 16 -22" fill="none" stroke="#FF2A4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </g>
       <!-- Leg L3 (Mid-Back Left) -->
       <g>
-        <animateTransform attributeName="transform" type="rotate" values="-15 -2 -5; 15 -2 -5; -15 -2 -5" dur="0.85s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="rotate" values="-15 -2 -5; 15 -2 -5; -15 -2 -5" dur="0.40s" repeatCount="indefinite"/>
         <path d="M -2 -5 L -6 -18 L -14 -22" fill="none" stroke="#00D2FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </g>
       <!-- Leg L4 (Back Left) -->
       <g>
-        <animateTransform attributeName="transform" type="rotate" values="15 -4 -4; -15 -4 -4; 15 -4 -4" dur="0.85s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="rotate" values="15 -4 -4; -15 -4 -4; 15 -4 -4" dur="0.40s" repeatCount="indefinite"/>
         <path d="M -4 -4 L -16 -14 L -24 -12" fill="none" stroke="#00E5FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </g>
 
       <!-- RIGHT LEGS (Positive Y) -->
       <!-- Leg R1 (Front Right) -->
       <g>
-        <animateTransform attributeName="transform" type="rotate" values="15 4 4; -15 4 4; 15 4 4" dur="0.85s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="rotate" values="15 4 4; -15 4 4; 15 4 4" dur="0.40s" repeatCount="indefinite"/>
         <path d="M 4 4 L 14 14 L 24 10" fill="none" stroke="#FF1744" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </g>
       <!-- Leg R2 (Mid-Front Right) -->
       <g>
-        <animateTransform attributeName="transform" type="rotate" values="-15 2 5; 15 2 5; -15 2 5" dur="0.85s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="rotate" values="-15 2 5; 15 2 5; -15 2 5" dur="0.40s" repeatCount="indefinite"/>
         <path d="M 2 5 L 8 18 L 16 22" fill="none" stroke="#FF2A4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </g>
       <!-- Leg R3 (Mid-Back Right) -->
       <g>
-        <animateTransform attributeName="transform" type="rotate" values="15 -2 5; -15 -2 5; 15 -2 5" dur="0.85s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="rotate" values="15 -2 5; -15 -2 5; 15 -2 5" dur="0.40s" repeatCount="indefinite"/>
         <path d="M -2 5 L -6 18 L -14 22" fill="none" stroke="#00D2FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </g>
       <!-- Leg R4 (Back Right) -->
       <g>
-        <animateTransform attributeName="transform" type="rotate" values="-15 -4 4; 15 -4 4; -15 -4 4" dur="0.85s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="rotate" values="-15 -4 4; 15 -4 4; -15 -4 4" dur="0.40s" repeatCount="indefinite"/>
         <path d="M -4 4 L -16 14 L -24 12" fill="none" stroke="#00E5FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </g>
     </g>
