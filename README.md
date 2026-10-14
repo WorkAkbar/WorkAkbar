@@ -6,7 +6,7 @@
 <!-- Subtitle / Typing Animation -->
 <p align="center">
   <a href="https://akbarrestu.my.id">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=3000&pause=1000&color=00D2FF&center=true&vCenter=true&multiline=false&width=650&height=35&lines=ERP+%26+Systems+Integration+Specialist;Odoo+ERP+Developer;Web+Engineering+%26+Distributed+Systems;Enterprise+Infrastructure+%26+Operations" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=3000&pause=1000&color=00D2FF&center=true&vCenter=true&multiline=false&width=750&height=35&lines=ERP+%26+Systems+Integration+Specialist;Odoo+ERP+Developer;Web+Engineering+%26+Distributed+Systems;Enterprise+Infrastructure+%26+Operations" alt="Typing SVG" />
   </a>
 </p>
 
