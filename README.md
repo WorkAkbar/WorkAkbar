@@ -6,23 +6,23 @@
 <!-- Subtitle / Typing Animation -->
 <p align="center">
   <a href="https://akbarrestu.my.id">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=3000&pause=1000&color=00D2FF&center=true&vCenter=true&multiline=false&width=750&height=35&lines=ERP+%26+Systems+Integration+Specialist;Odoo+ERP+Developer;Web+Engineering+%26+Distributed+Systems;Enterprise+Infrastructure+%26+Operations" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=3000&pause=1000&color=00E5FF&center=true&vCenter=true&multiline=false&width=680&height=32&lines=ERP+%26+Systems+Integration+Specialist;Odoo+ERP+Developer;Web+Engineering+%26+Cloud+Systems;Enterprise+DevOps+%26+Operations" alt="Typing SVG" />
   </a>
 </p>
 
-<!-- Social Links -->
+<!-- Cyber Spider-Man Tactical HUD Social Badges -->
 <p align="center">
   <a href="https://akbarrestu.my.id" target="_blank">
-    <img src="https://img.shields.io/badge/Website-akbarrestu.my.id-0284C7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" />
+    <img src="https://img.shields.io/badge/PORTFOLIO-akbarrestu.my.id-00E5FF?style=for-the-badge&logo=googlechrome&logoColor=05070c&labelColor=0b101d" alt="Portfolio" />
   </a>
   <a href="https://www.linkedin.com/in/akbar-restu-setiaji-080083u/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-Akbar_Restu_Setiaji-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/LINKEDIN-CONNECT-0066FF?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0b101d" alt="LinkedIn" />
   </a>
   <a href="mailto:work.akbarrestusetiaji@gmail.com">
-    <img src="https://img.shields.io/badge/Email-work.akbarrestusetiaji%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+    <img src="https://img.shields.io/badge/EMAIL-DIRECT%20MESSAGE-FF1744?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0b101d" alt="Email" />
   </a>
   <a href="https://github.com/WorkAkbar" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-WorkAkbar-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+    <img src="https://img.shields.io/badge/GITHUB-CODEBASE-161b2b?style=for-the-badge&logo=github&logoColor=white&labelColor=0b101d" alt="GitHub" />
   </a>
 </p>
 
