@@ -1,6 +1,6 @@
 <!-- Spider-Man Themed Dynamic Header Banner -->
 <p align="center">
-  <img src="assets/banner.svg?v=clean_spiderman_classic" width="100%" alt="Akbar Restu Setiaji - ERP &amp; Systems Integration Specialist" />
+  <img src="assets/banner.svg?v=spiderman_cinematic_intro_live" width="100%" alt="Akbar Restu Setiaji - ERP &amp; Systems Integration Specialist" />
 </p>
 
 <!-- Subtitle / Typing Animation -->
