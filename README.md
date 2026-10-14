@@ -1,12 +1,12 @@
-<!-- Header Banner -->
+<!-- Spider-Man Themed Dynamic Header Banner -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0:0052D4,50:4364F7,100:6FB1FC&height=220&section=header&text=Akbar%20Restu%20Setiaji&fontSize=42&fontAlignY=38&animation=fadeIn" width="100%" alt="Akbar Restu Setiaji" />
+  <img src="assets/banner.svg" width="100%" alt="Akbar Restu Setiaji - ERP &amp; Systems Integration Specialist" />
 </p>
 
 <!-- Subtitle / Typing Animation -->
 <p align="center">
   <a href="https://akbarrestu.my.id">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&multiline=false&width=650&height=35&lines=ERP+%26+Systems+Integration+Specialist;Odoo+ERP+Developer;Web+Engineering+%26+Distributed+Systems;Enterprise+Infrastructure+%26+Operations" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=3000&pause=1000&color=00D2FF&center=true&vCenter=true&multiline=false&width=650&height=35&lines=ERP+%26+Systems+Integration+Specialist;Odoo+ERP+Developer;Web+Engineering+%26+Distributed+Systems;Enterprise+Infrastructure+%26+Operations" alt="Typing SVG" />
   </a>
 </p>
 
@@ -124,7 +124,7 @@ Available for enterprise ERP consultations, multi-system integration initiatives
   </a>
 </p>
 
-<!-- Wave Footer Banner -->
+<!-- Spider-Man Themed Dynamic Wave Footer Banner -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0:0052D4,50:4364F7,100:6FB1FC&height=100&section=footer" width="100%" alt="Footer Banner" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=FF1744,E62429,0066FF,00D2FF&height=90&section=footer" width="100%" alt="Footer Banner" />
 </p>
