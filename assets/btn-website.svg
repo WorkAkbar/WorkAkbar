@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="205" height="38" viewBox="0 0 205 38">
+  <defs>
+    <linearGradient id="bgWebsite" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c14"/>
+      <stop offset="100%" stop-color="#0e1726"/>
+    </linearGradient>
+  </defs>
+  <!-- Button Container -->
+  <rect x="1" y="1" width="203" height="36" rx="8" fill="url(#bgWebsite)" stroke="#00E5FF" stroke-width="1.2" stroke-opacity="0.6"/>
+  <!-- Inner Left Icon Box -->
+  <rect x="3" y="3" width="32" height="32" rx="6" fill="#05080f" stroke="#1e293b" stroke-width="0.8"/>
+  <!-- Real 4-Color Google Chrome Official Logo -->
+  <g transform="translate(9, 9) scale(0.83)">
+    <path fill="#EA4335" d="M12 2a10 10 0 0 0-8.66 5l4.33 7.5A5 5 0 0 1 12 7h9.54A10 10 0 0 0 12 2z"/>
+    <path fill="#FBBC05" d="M21.54 7A10 10 0 0 1 12 22a9.96 9.96 0 0 1-5.66-1.74l4.33-7.5A5 5 0 0 0 17 12c0-.52-.08-1.02-.23-1.5z"/>
+    <path fill="#34A853" d="M3.34 7A10 10 0 0 0 12 22l4.33-7.5A5 5 0 0 1 7 12c0-1.03.31-1.99.84-2.79z"/>
+    <circle cx="12" cy="12" r="5.5" fill="#FFFFFF"/>
+    <circle cx="12" cy="12" r="4.2" fill="#4285F4"/>
+  </g>
+  <!-- Button Text -->
+  <text x="44" y="15" fill="#00E5FF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="800" letter-spacing="1.5">PORTFOLIO</text>
+  <text x="44" y="28" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" letter-spacing="0.3">akbarrestu.my.id</text>
+</svg>

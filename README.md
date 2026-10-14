@@ -10,19 +10,19 @@
   </a>
 </p>
 
-<!-- Cyber Spider-Man Tactical HUD Social Badges -->
+<!-- Cyber Spider-Man Tactical HUD Social Buttons (Real Full-Color Official Logos) -->
 <p align="center">
   <a href="https://akbarrestu.my.id" target="_blank">
-    <img src="https://img.shields.io/badge/PORTFOLIO-akbarrestu.my.id-00E5FF?style=for-the-badge&logo=googlechrome&logoColor=05070c&labelColor=0b101d" alt="Portfolio" />
+    <img src="assets/btn-website.svg" alt="Portfolio" height="38" />
   </a>
   <a href="https://www.linkedin.com/in/akbar-restu-setiaji-080083u/" target="_blank">
-    <img src="https://img.shields.io/badge/LINKEDIN-CONNECT-0066FF?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0b101d" alt="LinkedIn" />
+    <img src="assets/btn-linkedin.svg" alt="LinkedIn" height="38" />
   </a>
   <a href="mailto:work.akbarrestusetiaji@gmail.com">
-    <img src="https://img.shields.io/badge/EMAIL-DIRECT%20MESSAGE-FF1744?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0b101d" alt="Email" />
+    <img src="assets/btn-email.svg" alt="Email" height="38" />
   </a>
   <a href="https://github.com/WorkAkbar" target="_blank">
-    <img src="https://img.shields.io/badge/GITHUB-CODEBASE-161b2b?style=for-the-badge&logo=github&logoColor=white&labelColor=0b101d" alt="GitHub" />
+    <img src="assets/btn-github.svg" alt="GitHub" height="38" />
   </a>
 </p>
 
@@ -126,11 +126,17 @@ Focused on scalable enterprise architecture, multi-system integration, and opera
 Available for enterprise ERP consultations, multi-system integration initiatives, and technical collaborations.
 
 <p align="center">
-  <a href="https://akbarrestu.my.id">
-    <img src="https://img.shields.io/badge/Portfolio-akbarrestu.my.id-0284C7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" />
+  <a href="https://akbarrestu.my.id" target="_blank">
+    <img src="assets/btn-website.svg" alt="Portfolio" height="38" />
+  </a>
+  <a href="https://www.linkedin.com/in/akbar-restu-setiaji-080083u/" target="_blank">
+    <img src="assets/btn-linkedin.svg" alt="LinkedIn" height="38" />
   </a>
   <a href="mailto:work.akbarrestusetiaji@gmail.com">
-    <img src="https://img.shields.io/badge/Direct_Email-work.akbarrestusetiaji%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Direct Email" />
+    <img src="assets/btn-email.svg" alt="Email" height="38" />
+  </a>
+  <a href="https://github.com/WorkAkbar" target="_blank">
+    <img src="assets/btn-github.svg" alt="GitHub" height="38" />
   </a>
 </p>
 

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="185" height="38" viewBox="0 0 185 38">
+  <defs>
+    <linearGradient id="bgLinkedin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c14"/>
+      <stop offset="100%" stop-color="#0e1726"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="183" height="36" rx="8" fill="url(#bgLinkedin)" stroke="#0066FF" stroke-width="1.2" stroke-opacity="0.6"/>
+  <rect x="3" y="3" width="32" height="32" rx="6" fill="#05080f" stroke="#1e293b" stroke-width="0.8"/>
+  <!-- Real Official LinkedIn Logo (#0A66C2) -->
+  <g transform="translate(9, 9)">
+    <rect width="20" height="20" rx="3.5" fill="#0A66C2"/>
+    <path fill="#FFFFFF" d="M5.5 8.2h-2v7.3h2V8.2zm-1-3.6c-.7 0-1.2.5-1.2 1.2 0 .6.5 1.2 1.2 1.2.6 0 1.2-.5 1.2-1.2 0-.7-.5-1.2-1.2-1.2zm8.7 5.7c-.5-.7-1.2-.9-1.9-.9-1.4 0-2.3.9-2.3.9v-.8h-2v7.3h2v-4.1c0-1.1.5-1.8 1.5-1.8.9 0 1.4.6 1.4 1.7v4.2h2v-4.4c0-1.1-.3-2.1-.7-2.9z"/>
+  </g>
+  <text x="44" y="15" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="800" letter-spacing="1.5">LINKEDIN</text>
+  <text x="44" y="28" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" letter-spacing="0.3">Akbar Restu Setiaji</text>
+</svg>
