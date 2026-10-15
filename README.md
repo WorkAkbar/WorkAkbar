@@ -10,6 +10,18 @@
   </a>
 </p>
 
+<br/>
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/WorkAkbar/WorkAkbar/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/WorkAkbar/WorkAkbar/output/github-contribution-grid-snake.svg" />
+    <img alt="GitHub Contribution Snake Animation" src="https://raw.githubusercontent.com/WorkAkbar/WorkAkbar/output/github-contribution-grid-snake-dark.svg" width="100%" />
+  </picture>
+</div>
+
+<br/>
+
 <!-- Cyber Spider-Man Tactical HUD Social Buttons (Real Full-Color Official Logos) -->
 <p align="center">
   <a href="https://akbarrestu.my.id" target="_blank">
@@ -25,16 +37,6 @@
     <img src="assets/btn-github.svg" alt="GitHub" height="38" />
   </a>
 </p>
-
-<br/>
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/WorkAkbar/WorkAkbar/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/WorkAkbar/WorkAkbar/output/github-contribution-grid-snake.svg" />
-    <img alt="GitHub Contribution Snake Animation" src="https://raw.githubusercontent.com/WorkAkbar/WorkAkbar/output/github-contribution-grid-snake-dark.svg" width="100%" />
-  </picture>
-</div>
 
 <br/>
 
